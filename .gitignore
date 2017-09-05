@@ -1,0 +1,3 @@
+Server/src/Server/obj/**/*.*
+Server/src/Server/bin/**/*.*
+Server/.vs/**/*.*
