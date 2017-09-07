@@ -1,3 +1,4 @@
 Server/src/Server/obj/**/*.*
 Server/src/Server/bin/**/*.*
 Server/.vs/**/*.*
+Server/src/Server/wwwroot/homeex/node_modules/**/*.*
