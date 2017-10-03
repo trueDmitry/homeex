@@ -3,15 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AppHeaderComponent } from './app-header/app-header.component';
-import { ListOfAdresesComponent } from './list-of-adreses/list-of-adreses.component';
-import { AdresItemComponent } from './adres-item/adres-item.component';
+import { ListOfAddressComponent } from './list-of-address/list-of-address.component';
+import { AddressItemComponent } from './address-item/address-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppHeaderComponent,
-    ListOfAdresesComponent,
-    AdresItemComponent
+    ListOfAddressComponent,
+    AddressItemComponent
   ],
   imports: [
     BrowserModule
