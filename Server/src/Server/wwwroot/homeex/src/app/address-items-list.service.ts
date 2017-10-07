@@ -6,11 +6,18 @@ export class AddressItemsListService {
   private _addressItemList: AddressItem[] = [];  
 
   constructor() {
-      this._addressItemList.push({id:"testId",city:"Kiev",streetName:"Poryka St.",buildingNumber:"5",appartmentNumber:"10"});
+      let firstItem = new AddressItem();
+      firstItem.id = "testId";
+      firstItem.appartmentNumber = "10";
+      firstItem.buildingNumber = "2";
+      firstItem.city = "Kiev";
+      firstItem.streetName = "Poryka St.";
+      this._addressItemList.push(firstItem);
    }
 
   public addAddressItem(item:AddressItem): void {
-    this._addressItemList.push(item);    
+    this._addressItemList.push(item);  
+    console.log(this._addressItemList);  
   }
 
   public getAddressList(): AddressItem[]{
