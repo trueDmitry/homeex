@@ -7,6 +7,7 @@ import { AppHeaderComponent } from './app-header/app-header.component';
 import { ListOfAddressComponent } from './list-of-address/list-of-address.component';
 import { AddressItemComponent } from './address-item/address-item.component';
 import { CreateAddressItemFormComponent } from './create-address-item-form/create-address-item-form.component';
+import { AddressItemsListService } from './address-items-list.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { CreateAddressItemFormComponent } from './create-address-item-form/creat
     BrowserModule,
       FormsModule
   ],
-  providers: [],
+  providers: [AddressItemsListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

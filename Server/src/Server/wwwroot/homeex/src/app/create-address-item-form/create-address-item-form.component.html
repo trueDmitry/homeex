@@ -1,7 +1,10 @@
 <div>Create new address form</div>
-<form #createAddressItemForm="ngForm" class="create-address-item-form">
+<form #createAddressItemForm="ngForm"
+       novalidate 
+      (ngSubmit)="onSubmit(createAddressItemForm)" 
+      class="create-address-item-form">
   <div class="form-group">
-    <input type="text" class="form-control" placeholder="City"/>
+    <input type="text" class="form-control ng-valid" placeholder="City"/>
   </div>
 
   <div class="form-group" >
@@ -15,5 +18,8 @@
   <div class="form-group" >
     <input type="text" class="form-control" placeholder="Appartment number" >
   </div>
-  <button [disabled]="createAddressItemForm.invalid">Create</button>
+  <input type="submit"
+         [disabled]="createAddressItemForm.invalid"          
+         value="Create" 
+         class="btn btn-default"/>
 </form>

@@ -1,4 +1,5 @@
 import {Input, Component } from '@angular/core';
+import { ListOfAddresses } from './list-of-address/entities/listOfAddresses';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,4 @@ export class AppComponent {
   }
 }
 
-export class TestObject{
 
-}
