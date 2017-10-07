@@ -8,6 +8,7 @@ import { ListOfAddressComponent } from './list-of-address/list-of-address.compon
 import { AddressItemComponent } from './address-item/address-item.component';
 import { CreateAddressItemFormComponent } from './create-address-item-form/create-address-item-form.component';
 import { AddressItemsListService } from './address-items-list.service';
+import { GuidGeneratorService } from './guid-generator.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { AddressItemsListService } from './address-items-list.service';
     BrowserModule,
       FormsModule
   ],
-  providers: [AddressItemsListService],
+  providers: [AddressItemsListService,GuidGeneratorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
