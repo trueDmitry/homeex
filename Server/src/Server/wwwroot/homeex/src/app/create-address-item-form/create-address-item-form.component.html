@@ -1,25 +1,39 @@
 <div>Create new address form</div>
 <form #createAddressItemForm="ngForm"
-       novalidate 
-      (ngSubmit)="onSubmit(createAddressItemForm)" 
-      class="create-address-item-form">
+            novalidate 
+            (ngSubmit)="onSubmit(createAddressItemForm)" 
+            class="create-address-item-form">
+
   <div class="form-group">
-    <input type="text" class="form-control ng-valid" placeholder="City"/>
+    <input type="text" class="form-control" placeholder="City"
+            name="city"
+            [(ngModel)]="city" 
+            required/>
   </div>
 
   <div class="form-group" >
-    <input type="text" class="form-control" placeholder="Street name" >
+    <input type="text" class="form-control" placeholder="Street name"
+            name="streetName"
+            [(ngModel)]="streetName"
+            required>
   </div>
 
    <div class="form-group" >
-    <input type="text" class="form-control" placeholder="Building number" >
+    <input type="text" class="form-control" placeholder="Building number" 
+            name="buildingNumber"
+            [(ngModel)]="buildingNumber"
+            required>
   </div>
 
   <div class="form-group" >
-    <input type="text" class="form-control" placeholder="Appartment number" >
+    <input type="text" class="form-control" placeholder="Appartment number"
+            name="appartmenNumber"
+            [(ngModel)]="appartmenNumber"
+            required>
   </div>
+
   <input type="submit"
-         [disabled]="createAddressItemForm.invalid"          
-         value="Create" 
-         class="btn btn-default"/>
+            [disabled]="createAddressItemForm.invalid"          
+            value="Create" 
+            class="btn btn-default"/>
 </form>
