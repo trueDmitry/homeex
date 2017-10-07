@@ -1,24 +1,19 @@
-<form #createAddressItemForm="ngForm">
-  <div class="input-group">
-    <span class="input-group-addon" id="basic-addon1">@</span>
-    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+<div>Create new address form</div>
+<form #createAddressItemForm="ngForm" class="create-address-item-form">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="City"/>
   </div>
 
-  <div class="input-group">
-    <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
-    <span class="input-group-addon" id="basic-addon2">@example.com</span>
+  <div class="form-group" >
+    <input type="text" class="form-control" placeholder="Street name" >
   </div>
 
-  <div class="input-group">
-    <span class="input-group-addon">$</span>
-    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-    <span class="input-group-addon">.00</span>
+   <div class="form-group" >
+    <input type="text" class="form-control" placeholder="Building number" >
   </div>
 
-  <label for="basic-url">Your vanity URL</label>
-  <div class="input-group">
-    <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
-    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+  <div class="form-group" >
+    <input type="text" class="form-control" placeholder="Appartment number" >
   </div>
   <button [disabled]="createAddressItemForm.invalid">Create</button>
 </form>
