@@ -10,7 +10,7 @@
             [(ngModel)]="draftAddressItem.city" 
             required #cityVar="ngModel" />
             <div [hidden]="!(cityVar.invalid && (cityVar.dirty || cityVar.touched))">
-                <span [hidden]="!cityVar.errors.required" class="alert-error">This field required</span>
+                <span [hidden]="cityVar.invalid && !cityVar.errors.required" class="alert-error">This field required</span>
             </div>
   </div>
 
@@ -20,7 +20,7 @@
             [(ngModel)]="draftAddressItem.streetName"
             required #streetNameVar="ngModel">
             <div [hidden]="!(streetNameVar.invalid && (streetNameVar.dirty || streetNameVar.touched))">
-                <span [hidden]="!streetNameVar.errors.required" class="alert-error">This field required</span>
+                <span [hidden]="streetNameVar.invalid && !streetNameVar.errors.required" class="alert-error">This field required</span>
             </div>            
   </div>
 
@@ -30,7 +30,7 @@
             [(ngModel)]="draftAddressItem.buildingNumber"
             required #buildingNumberVar="ngModel">
             <div [hidden]="!(buildingNumberVar.invalid && (buildingNumberVar.dirty || buildingNumberVar.touched))">
-                <span [hidden]="!buildingNumberVar.errors.required" class="alert-error">This field required</span>
+                <span [hidden]="buildingNumberVar.invalid && !buildingNumberVar.errors.required" class="alert-error">This field required</span>
             </div>
   </div>
 
@@ -40,7 +40,7 @@
             [(ngModel)]="draftAddressItem.appartmentNumber"
             required #appartmentNumberVar="ngModel">
             <div [hidden]="!(appartmentNumberVar.invalid && (appartmentNumberVar.dirty || appartmentNumberVar.touched))">
-                <span [hidden]="!appartmentNumberVar.errors.required" class="alert-error">This field required</span>
+                <span [hidden]="buildingNumberVar.invalid && !appartmentNumberVar.errors.required" class="alert-error">This field required</span>
             </div>
   </div>
 
