@@ -12,7 +12,7 @@ export class AppComponent {
 
   constructor(){
     this.testProp = 'test';
-    this.title  = 'app'; 
+    this.title  = 'homeex'; 
   }
 }
 

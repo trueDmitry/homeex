@@ -15,10 +15,10 @@ export class CreateAddressItemFormComponent{
   constructor(private _addressItemsListService: AddressItemsListService, private _guidGeneratorService:GuidGeneratorService) { }
 
   onSubmit(createAddressItemForm: NgForm){
-    if(createAddressItemForm.valid){
-      this.draftAddressItem.id = this._guidGeneratorService.uuidv4();
-      this._addressItemsListService.addAddressItem(this.draftAddressItem);  
-    }       
+     if(createAddressItemForm.valid){
+       this.draftAddressItem.id = this._guidGeneratorService.uuidv4();
+       this._addressItemsListService.addAddressItem(this.draftAddressItem);  
+     }       
   }
 
 }
